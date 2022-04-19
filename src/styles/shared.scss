@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+html body {
+	font-family: Inter, 'Helvetica Neue';
+	margin: 0;
+}
+
+.icon-button {
+	padding: 7px;
+	color: theme-color(primary);
+	border-color: theme-color(gray-300);
+
+	&:hover {
+		background: theme-color(gray-100);
+		border-color: theme-color(gray-100);
+		color: theme-color(primary);
+	}
+
+	&_active {
+		background: theme-color(gray-100);
+		border-color: theme-color(gray-100);
+		color: theme-color(primary);
+
+		&:hover,
+		&:focus {
+			background: theme-color(gray-100);
+			border-color: theme-color(gray-100);
+			color: theme-color(primary);
+		}
+	}
+
+	&_filter-mark:not(.icon-button_active) {
+		position: relative;
+
+		&:after {
+			content: '';
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: theme-color(primary);
+			position: absolute;
+			top: -2px;
+			right: -2px;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.items {
+	&-center {
+		align-items: center;
+	}
+}
+
+$directions: (
+	l: left,
+	r: right,
+	t: top,
+	b: bottom
+);
+
+@each $key, $value in $palette {
+	.color-#{$key} {
+		color: theme-color($key);
+	}
+}
+
+@each $key, $value in $spacings {
+
+	@each $directionKey, $directionValue in $directions {
+		.p#{$directionKey}-#{$key} {
+			padding-#{$directionValue}: theme-space($key)
+		}
+
+		.m#{$directionKey}-#{$key} {
+			margin-#{$directionValue}: theme-space($key)
+		}
+	}
+
+	.px-#{$key} {
+		padding: 0 theme-space($key);
+	}
+
+	.py-#{$key} {
+		padding: theme-space($key) 0;
+	}
+
+	.mx-#{$key} {
+		padding: 0 theme-space($key);
+	}
+
+	.my-#{$key} {
+		padding: theme-space($key) 0;
+	}
+}

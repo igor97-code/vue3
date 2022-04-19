@@ -1,0 +1,19 @@
+@use "sass:map";
+
+$initial-space: 4px;
+
+$spacings: (
+	auto: auto,
+	4xs: $initial-space,
+	3xs: $initial-space * 2,
+	2xs: $initial-space * 3,
+	xs: $initial-space * 4,
+	s: $initial-space * 6,
+	m: $initial-space * 8,
+	l: $initial-space * 10,
+	xl: $initial-space * 13
+);
+
+@function theme-space($space) {
+	@return map.get($spacings, $space)
+}

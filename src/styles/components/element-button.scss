@@ -1,0 +1,16 @@
+.el-button {
+	border-radius: 8px;
+
+	&:not(.el-button--primary) {
+		color: theme-color(primary);
+		
+		&:hover,
+		&:focus {
+			background: theme-color(gray-100);
+			border-color: theme-color(gray-100);
+			color: theme-color(gray-500);
+			color: theme-color(primary);
+		}
+	}
+
+}

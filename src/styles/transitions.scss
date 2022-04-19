@@ -1,0 +1,29 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+//костыль во имя единообразия)
+.el-zoom-in-top-enter-active,
+.el-zoom-in-top-leave-active {
+    transition: opacity .2s ease;
+}
+.el-zoom-in-top-enter-from,
+.el-zoom-in-top-leave-active {
+    opacity: 0;
+}
+
+.fade-route-enter-active,
+.fade-route-leave-active {
+    transition: opacity .4s ease;
+}
+
+.fade-route-enter-from,
+.fade-route-leave-to {
+    opacity: 0;
+}

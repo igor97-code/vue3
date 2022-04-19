@@ -1,0 +1,9 @@
+.el-popper {
+	box-shadow: 4px 8px 24px rgb(137 137 137 / 10%) !important;
+	border-radius: 16px !important;
+	border: 1px solid theme-color(gray-100) !important;
+
+	&__arrow {
+		display: none;
+	}
+}

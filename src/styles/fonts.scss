@@ -1,0 +1,123 @@
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Thin.woff2);
+	font-weight: 100
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-ExtraLight.woff2);
+	font-weight: 200
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Light.woff2);
+	font-weight: 300
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Regular.woff2);
+	font-weight: 400
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Medium.woff2);
+	font-weight: 500
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-SemiBold.woff2);
+	font-weight: 600
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Bold.woff2);
+	font-weight: 700
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-ExtraBold.woff2);
+	font-weight: 800
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(~@/assets/fonts/Inter-Black.woff2);
+	font-weight: 900
+}
+
+.weight {
+	&_thin {
+		font-weight: 100;
+	}
+
+	&_extra-light {
+		font-weight: 200;
+	}
+
+	&_light {
+		font-weight: 300;
+	}
+
+	&_regular {
+		font-weight: 400;
+	}
+
+	&_medium {
+		font-weight: 500;
+	}
+
+	&_semi-bold {
+		font-weight: 600;
+	}
+
+	&_bold {
+		font-weight: 700;
+	}
+
+	&_extra-bold {
+		font-weight: 800;
+	}
+
+	&_black {
+		font-weight: 900;
+	}
+}
+
+.font-size {
+	&_xs {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&_s {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&_m {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	&_l {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&_xl {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&_xxl {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}

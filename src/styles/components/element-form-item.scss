@@ -1,0 +1,13 @@
+.el-form-item {
+
+	&.is-error {
+
+		.el-input__inner {
+			--el-color-danger: #{theme-color(status-error)};
+
+			&:hover {
+				--el-color-danger: #{theme-color(status-error)};
+			}
+		}
+	}
+}

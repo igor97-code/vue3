@@ -1,0 +1,9 @@
+:root {
+	--el-color-primary: #47A76A;
+	--el-border-color-hover: #9BCC93;
+	--el-color-primary-light-7: #9BCC93;
+	--el-color-primary-light-3: #9BCC93;
+	--el-color-primary-light-9: #F3F9F2;
+	--el-color-primary-dark-2: #92D494;
+	--el-transition-duration: 160ms;
+}

@@ -1,0 +1,136 @@
+.content, .authorization {
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: theme-color(primary);
+        margin-top: 57px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: theme-color(gray-500);
+        max-width: 323px;
+        margin: 17px auto 0;
+    }
+
+    &__form {
+        width: 320px;
+        margin: 35px auto 0;
+    }
+
+    &__error {
+        display: flex;
+        text-align: left;
+        color: theme-color(status-error);
+        padding: 0 theme-space(2xs);
+        margin-bottom: 14px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__circle {
+        width: 4px;
+        height: 4px;
+        background: theme-color(status-error);
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin: theme-space(4xs) theme-space(3xs) 0 0;
+    }
+
+    &__authorization {
+        position: fixed;
+        top: theme-space(xs);
+        right: theme-space(xs);
+        padding: theme-space(3xs) theme-space(xs);
+        background-color: theme-color(default-white);
+        border: 1px solid theme-color(gray-300);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: theme-color(primary);
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background: theme-color(gray-100);
+        }
+    }
+}
+
+::v-deep(.el-form) {
+    width: 320px;
+
+    .el {
+        &-form-item {
+
+            &:not(.is-error) .el-input__inner {
+                &:hover,
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &-input {
+            &__inner {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                color: theme-color(gray-500);
+                padding: theme-space(xs);
+                background: theme-color(gray-100);
+                height: 48px;
+                width: 320px;
+            }
+
+            &__suffix {
+                .el-input__validateIcon {
+                    display: none;
+                }
+            }
+
+        }
+
+        &-checkbox {
+            &__inner {
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+
+                &::after {
+                    left: 7px;
+                    top: 3px;
+                }
+            }
+
+            &__label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                --el-checkbox-checked-text-color: theme-color(gray-500);
+                padding-left: theme-space(3xs);
+            }
+        }
+
+        &-button {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            width:320px;
+            height: 40px;
+            margin-top: 14px;
+
+            &:hover, &:focus {
+                background-color: theme-color(primary);
+                border-color: theme-color(primary);
+            }
+
+            &.is-disabled:hover, &:disabled {
+                opacity: 0.5;
+                background-color: theme-color(primary);
+            }
+        }
+    }
+}

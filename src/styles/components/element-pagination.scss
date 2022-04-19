@@ -1,0 +1,55 @@
+.el-pagination {
+    gap: theme-space(3xs);
+
+    .btn-prev,
+    .btn-next,
+    .number,
+    .btn-quickprev,
+    .btn-quicknext {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        transition: color 160ms ease, background-color 160ms ease;
+    }
+
+    .btn-prev,
+    .btn-next {
+        border: 1px solid theme-color(gray-300);
+
+        .el-icon {
+            font-size: 20px;
+        }
+    }
+
+    .btn-quickprev,
+    .btn-quicknext {
+        &:not(:hover) {
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 5px;
+        }
+    }
+
+    .el-pager {
+        gap: theme-space(3xs);
+
+        .number {
+            &.is-active {
+                background: theme-color(primary);
+                color: theme-color(default-white);
+
+                &.is-disabled {
+                    color: theme-color(default-white);
+                }
+            }
+        }
+    }
+
+    .number,
+    .btn-quickprev,
+    .btn-quicknext {
+        background: transparent;
+    }
+}

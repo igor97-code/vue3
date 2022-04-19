@@ -1,0 +1,23 @@
+@use "sass:map";
+
+$palette: (
+	primary: #47A76A,
+	primary-light: #D3EDD3,
+	primary-lightest: #F3F9F2,
+
+	gray-100: #F7F7F7,
+	gray-300: #DADADA,
+	gray-500: #828282,
+	gray-700: #333333,
+
+	status-success: #92D494,
+	status-warn: #FFE684,
+	status-error: #E07070,
+
+	default-white:#FFFFFF,
+	status-error-light: #FAF5F5
+);
+
+@function theme-color($color) {
+	@return map.get($palette, $color)
+}

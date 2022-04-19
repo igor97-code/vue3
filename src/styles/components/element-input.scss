@@ -1,0 +1,19 @@
+.el-input {
+	&__inner {
+		border-radius: 8px;
+	}
+
+	&__clear {
+		font-size: 16px !important;
+
+		svg {
+			display: none;
+		}
+
+		&:after {
+			content: '✕';
+			font-weight: bold;
+			font-style: normal;
+		}
+	}
+}

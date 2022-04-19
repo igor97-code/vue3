@@ -1,0 +1,17 @@
+// Tabs
+.el-tabs {
+	&__nav-wrap::after{
+		display: none;
+	}
+
+	&__item {
+		font-size: 16px;
+		color: theme-color(gray-500);
+		padding: 0 10px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+	&__header {
+		margin: 0 0 16px;
+	}
+}
